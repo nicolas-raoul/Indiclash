@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	  package="org.openintents.indiclash.sample.flashcardsapp"
 	  android:versionCode="1"
-	  android:versionName="1.0">
-	<application android:label="Indiclash Flashcards app">
+	  android:versionName="0.1">
+	<application android:label="Indiclash Flashcards app" android:icon="@drawable/icon">
 		<activity android:name=".FlashcardsApp" android:label="Indiclash Flashcards app">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />

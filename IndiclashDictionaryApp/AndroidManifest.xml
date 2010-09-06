@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="org.openintents.indiclash.sample.dictionaryapp"
       android:versionCode="1"
-      android:versionName="1.0">
-    <application android:label="Indiclash Dictionary app">
+      android:versionName="0.1">
+    <application android:label="Indiclash Dictionary app" android:icon="@drawable/icon">
         <activity android:name=".DictionaryApp" android:label="Indiclash Dictionary app">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
