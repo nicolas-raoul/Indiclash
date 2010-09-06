@@ -11,6 +11,18 @@
             </intent-filter>
         </activity>
 
+		<activity android:name=".DictionaryLookup" android:label="Translate word">
+			<!--
+				Intent filter to receive TRANSLATE intents from other apps.
+				If you develop a dictionary app and want other apps to be able to call you, implement this intent.
+			-->
+			<intent-filter>
+				<!-- I would prefer dictionary (or flashcard) over indiclash in the package name -->
+				<action android:name="org.openintents.dictionary.LOOKUP" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
     </application>
     <uses-sdk android:minSdkVersion="3" />
 
