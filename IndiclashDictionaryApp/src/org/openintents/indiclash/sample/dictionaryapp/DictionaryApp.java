@@ -29,7 +29,7 @@ public class DictionaryApp extends Activity {
         		intent.setAction("org.openintents.indiclash.CREATE_FLASHCARD");
         		// See http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
         		intent.putExtra("SOURCE_LANGUAGE", "ja");
-        		intent.putExtra("TARGET_LANGUAGE", "FR");
+        		intent.putExtra("TARGET_LANGUAGE", "fr");
         		intent.putExtra("SOURCE_TEXT", "日の出");
         		intent.putExtra("TARGET_TEXT", "Lever du soleil");
         		startActivity(intent);
