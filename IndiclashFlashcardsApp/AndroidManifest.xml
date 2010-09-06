@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="org.openintents.indiclash.sample.flashcardsapp"
+	  android:versionCode="1"
+	  android:versionName="1.0">
+	<application android:label="Indiclash Flashcards app">
+		<activity android:name=".FlashcardsApp" android:label="Indiclash Flashcards app">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".CreateFlashcard" android:label="Create Flashcard">
+			<!--
+				Intent filter to receive CREATE_FLASHCARD intents from other apps.
+				If you develop a flashcard app, add this to your flashcard creation activity.
+			-->
+			<intent-filter>
+				<action android:name="org.openintents.indiclash.CREATE_FLASHCARD" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+	</application>
+	<uses-sdk android:minSdkVersion="3" />
+</manifest>
